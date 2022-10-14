@@ -25,12 +25,27 @@ ____________
   :mag:"vendor": "nombre_del_la_tienda"<br>
   :mag:"version": "version_del_componente_actual"
   ________
+## :key: Listado de apps que están funcionando en la tienda
+  1.  "vtex.css-handles": "0.x",
+  2.  "vtex.store-graphql": "2.x",
+  3.  "vtex.store-components": "3.x"
+__________
+## :key:Dependencias
+1. Store-theme
 
-## :key:Dependencia
 ```ruby
   "dependencies": 
   {
-    "itglobers.custom-department-search": "0.x"
+    "vtex.store-graphql": "2.x"
+  }
+```
+
+2. Store GraphQl
+
+```ruby
+  "dependencies": 
+  {
+    "vtex.store-graphql": "2.x"
   }
 ```
 ## :key:Manera de llamar al componente: 
