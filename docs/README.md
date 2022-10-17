@@ -9,21 +9,14 @@ ____________
 
 - :pushpin: `Paso 1 - Configuración Básica`: 
   Asegurarse que esta en el ambiente correcto de vtex
-
-- :pushpin: `Paso 2 - Clonación del repositorio`: 
-  Ingresar al repositorio estandar de vtex- react [<sub>https://github.com/vtex-apps/react-app-template</sub>] 
-- :pushpin: `Paso 3 - Editar el Manifest.json`: 
-  Se sugiere que se cambien los valores del vendor, versión y name si fuese necesario, los valores actuales son
-  
-  ```ruby
-    "vendor": "itglobers",
-    "name": "custom-department-search",
-    "version": "0.0.1",
-  ```
-  Si desea cambiar estos valores se recomienda:
-  
-  :mag:"vendor": "nombre_del_la_tienda"<br>
-  :mag:"version": "version_del_componente_actual"
+- :pushpin: `Paso 2 - Clone estos archivos` con el link proporcionado en el repositorio 
+- :pushpin: `Paso 3 - Instalacion de nodos de react`: 
+  Ingresar a la carpeta de react ejecutando el comando en consola ```$ cd react```
+  y dentro de esta instalar lo siguiente: <br>
+  :pencil2:`1` Nodos de react ejecutando en consola el comando ```$ yarn``` <br>
+  :pencil2:`2` Paquete `css-handles` para los estilos basicos ```$ @vtex/css-handles```
+- :pushpin: `Paso 4 - Volver a carpeta principal del proyecto y linkear app a su Tienda`: 
+  Ejecute comando en consola ```$ vtex link```
   ________
 ## :key: Listado de apps que están funcionando en la tienda
   1.  "vtex.css-handles": "0.x",
@@ -31,7 +24,8 @@ ____________
   3.  "vtex.store-components": "3.x"
 __________
 ## :key:Dependencias
-1. Store-theme
+
+1. Store GraphQl
 
 ```ruby
   "dependencies": 
@@ -39,15 +33,15 @@ __________
     "vtex.store-graphql": "2.x"
   }
 ```
-
-2. Store GraphQl
+2. Store-theme
 
 ```ruby
   "dependencies": 
   {
-    "vtex.store-graphql": "2.x"
+    "itglobers.custom-department-search": "0.x"
   }
 ```
+
 ## :key:Manera de llamar al componente: 
 Ejemplo:
 ```
